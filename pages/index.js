@@ -34,7 +34,7 @@ function Card(props) {
           <Link href={{pathname: "pokemons/[id]", query:{id:props.id}}}>
           <h5 className="card-title">{props.title}</h5>
           </Link>
-          <p className="card-text">{props.text}</p>
+    
           {likes === 5 ? null : (
             <>
               <p className="card-text">Likes: {likes}</p>
